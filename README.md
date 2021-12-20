@@ -25,9 +25,14 @@ Scene Graph for Miseang(Drama)
 ## Project2 ✔
 ### 1. Introduction
 ![MiseangProject](image/introduction2.jpg)
-* 관계를 온톨로지 스키마에 기반하여 정희하는 방식이 아닌 신경망으로 인식
+* 관계를 온톨로지 스키마에 기반하여 정의하는 방식이 아닌 신경망으로 인식
 * 이를 위해 새로운 스키마를 가지는 총 836개의 “Miseang-VidSG” 데이터 집합 생성
 
 
 ### 2. Dataset Structure
 ![MiseangProject](image/dataset.jpg)
+* subject / object: 물체 id와 카테고리
+* trajectories : 각 프레임마다 등장 물체들의 id와 바운딩 박스의 위치(xmin, ymin, xmax, ymax)
+* relation : 주어와 목적어 물체의 id, 관계 카테고리, 관계의 시작 프레임과 끝 프레임 
+
+
